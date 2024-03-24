@@ -18,6 +18,12 @@ pipeline{
     }
 
     stages {
+        stage("Clone Code") {
+            steps {
+                echo "Cloning from my GitHub"
+                git branch: 'main', url: 'https://github.com/hyndavi03/jenkins-sampleprj.git'
+            }
+        }
         stage('Build Dockerfile') {
             steps {
                 script {
