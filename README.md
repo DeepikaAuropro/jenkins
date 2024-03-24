@@ -36,4 +36,4 @@ Install Nginx reverse proxy to make this application available
 # Pipeline did not trigger
 # Lemme try now
 # Hope it works
-
+# No
