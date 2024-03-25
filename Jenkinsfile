@@ -13,7 +13,7 @@ pipeline{
         VERSION = "${BUILD_NUMBER}"
         IMAGE_NAME="python"
         DOCKER_IMAGE_TAG = "${IMAGE_NAME}:${VERSION}"
-        DOCKER_HUB_REPO = "venkatahyndavi/python"
+        DOCKER_HUB_REPO = "deepu0305/vscodedocker"
         DOCKER_HUB_TAG = "${DOCKER_HUB_REPO}:${VERSION}"
     }
 
@@ -21,7 +21,7 @@ pipeline{
         stage("Clone Code") {
             steps {
                 echo "Cloning from my GitHub"
-                git branch: 'main', url: 'https://github.com/hyndavi03/jenkins-sampleprj.git'
+                git branch: 'main', url: 'https://github.com/DeepikaAuropro/jenkins.git'
             }
         }
         stage('Build Dockerfile') {
