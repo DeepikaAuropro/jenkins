@@ -35,4 +35,3 @@ Install Nginx reverse proxy to make this application available
 # Didn't install nginx i guess
 # Pipeline did not trigger
 # Lemme try now
-# Hope it works
